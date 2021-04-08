@@ -13,8 +13,13 @@
 <script>
     window.$docsify = {
         name: 'leetcode-python',
-        repo: 'https://github.com/docsifyjs/docsify/',
+        repo: 'https://github.com/gyileng/leetcode-python/',
         loadSidebar: true,
+        sidebarDisplayLevel: 1,
+        subMaxLevel: 3,
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md'
+        },
         count: {
             countable: true,
             fontsize: '0.9em',
@@ -24,7 +29,9 @@
     }
 </script>
 <!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
