@@ -26,5 +26,5 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
 ```
-执行用时： `40 ms` , 在所有 Python3 提交中击败了 `89.11%` 的用户
+执行用时： `40 ms` , 在所有 Python3 提交中击败了 `89.11%` 的用户  
 内存消耗： `20.2 MB` , 在所有 Python3 提交中击败了 `47.76%` 的用户
