@@ -97,7 +97,7 @@
     border-bottom: none;
 }
 
-.nav-item ul {
+.sidebar-nav ul li ul{
     display: none;
 }
 
@@ -105,7 +105,7 @@
     border-bottom: none;
 }
 
-.nav-mini ul {
+.sidebar-nav ul li ul li ul {
     display: none;
 }
 
