@@ -5,7 +5,7 @@
 - 第二章
   - [概述](docs/第二章/概述.md)
 - <span class="nav-item"><a>第三章</a></span>
-  - 001-100
+  - <span class="nav-mini"><a>001-100</a></span>
     - [26.删除排序数组中的重复项](/problems/26_remove_duplicates/readme.md)
-  - 101-200
+  - <span class="nav-mini"><a>101-200</a></span>
     - [122.买卖股票的最佳时机 II](/problems/122_max_profit/readme.md)
