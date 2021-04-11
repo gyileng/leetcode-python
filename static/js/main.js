@@ -4,31 +4,29 @@ $(document).on("click", "#return-top-bottom>div", function () {
     $('html,body').animate({scrollTop: scroll_val}, 800)
 });
 
-$(function () {
-    // nav收缩展开
-    $('.sidebar-nav>ul>li>a').on('click', function () {
-        if ($(this).next().css('display') == "none") {
-            //展开未展开
-            $('.nav-item').children('ul').slideUp(300);
-            $(this).next('ul').slideDown(300);
-            $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
-        } else {
-            //收缩已展开
-            $(this).next('ul').slideUp(300);
-            $('.nav-item.nav-show').removeClass('nav-show');
-        }
-    });
+// nav收缩展开
+$('.sidebar-nav>ul>li>a').on('click', function () {
+    if ($(this).next().css('display') == "none") {
+        //展开未展开
+        $('.nav-item').children('ul').slideUp(300);
+        $(this).next('ul').slideDown(300);
+        $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+    } else {
+        //收缩已展开
+        $(this).next('ul').slideUp(300);
+        $('.nav-item.nav-show').removeClass('nav-show');
+    }
+});
 
-    $('.sidebar-nav>ul>li>ul>li>a').on('click', function () {
-        if ($(this).next().css('display') == "none") {
-            //展开未展开
-            $(this).children('ul').slideUp(300);
-            $(this).next('ul').slideDown(300);
-            $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
-        } else {
-            //收缩已展开
-            $(this).next('ul').slideUp(300);
-            $('.nav-mini.nav-show').removeClass('nav-show');
-        }
-    });
+$('.sidebar-nav>ul>li>ul>li>a').on('click', function () {
+    if ($(this).next().css('display') == "none") {
+        //展开未展开
+        $(this).children('ul').slideUp(300);
+        $(this).next('ul').slideDown(300);
+        $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+    } else {
+        //收缩已展开
+        $(this).next('ul').slideUp(300);
+        $('.nav-mini.nav-show').removeClass('nav-show');
+    }
 });
