@@ -5,7 +5,7 @@ $(document).on("click", "#return-top-bottom>div", function () {
 });
 
 // nav收缩展开
-$('.sidebar-nav>ul>li>a').on('click', function () {
+$(document).on("click", ".sidebar-nav>ul>li>a", function () {
     if ($(this).next().css('display') == "none") {
         //展开未展开
         $('.nav-item').children('ul').slideUp(300);
@@ -16,7 +16,7 @@ $('.sidebar-nav>ul>li>a').on('click', function () {
         $(this).next('ul').slideUp(300);
         $('.nav-item.nav-show').removeClass('nav-show');
     }
-});
+})
 
 $('.sidebar-nav>ul>li>ul>li>a').on('click', function () {
     if ($(this).next().css('display') == "none") {
