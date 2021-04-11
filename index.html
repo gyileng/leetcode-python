@@ -125,8 +125,8 @@
     }
     $(document).on("click", "#return-top-bottom>div", function () {
         const to = $(this).attr("data-to");
-        const scroll_val = to === 'top' ? 0 : window.document.body.clientHeight;
-        $('html,body').animate({scrollTop: scroll_val}, 8000)
+        const scroll_val = to === 'top' ? 0 : window.document.getElementsByClassName("content").clientHeight;
+        $('html,body').animate({scrollTop: scroll_val}, 800)
     });
 </script>
 <!-- Docsify v4 -->
