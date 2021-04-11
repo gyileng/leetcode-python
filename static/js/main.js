@@ -5,7 +5,7 @@ $(document).on("click", "#return-top-bottom>div", function () {
 });
 
 // nav收缩展开
-$(document).on("click", ".sidebar-nav>ul>li>a", function () {
+$(document).on("click", ".sidebar-nav>ul>li>strong", function () {
     if ($(this).next().css('display') == "none") {
         //展开未展开
         $('.nav-item').children('ul').slideUp(300);
@@ -18,7 +18,7 @@ $(document).on("click", ".sidebar-nav>ul>li>a", function () {
     }
 })
 
-$(document).on("click", ".sidebar-nav>ul>li>ul>li>a", function () {
+$(document).on("click", ".sidebar-nav>ul>li>ul>li>strong", function () {
     if ($(this).next().css('display') == "none") {
         //展开未展开
         $(this).children('ul').slideUp(300);
