@@ -126,7 +126,7 @@
 
       while (node && node.className !== 'sidebar-nav' && node.parentNode) {
         if (node.parentNode.tagName === 'LI' || node.parentNode.className === 'app-sub-sidebar') {
-          node.parentNode.classList.add('collapse');
+          node.parentNode.classList.add('open');
         }
 
         node = node.parentNode;
