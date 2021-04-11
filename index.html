@@ -19,10 +19,46 @@
         .level-hard {
             color: #ec4c47;
         }
+
+        #return-top-bottom {
+            position: fixed;
+            right: 10px;
+            bottom: 50px
+        }
+
+        #return-top-bottom .p-block {
+            transition: all .3s;
+            cursor: pointer;
+            padding: 4px 8px;
+            margin-bottom: 0
+        }
+
+        #return-top-bottom .p-block:hover {
+            background-color: #007bff;
+            color: #f8f9fa
+        }
+
+        #return-top-bottom .p-block:hover {
+            background-color: #007bff !important;
+            color: #f8f9fa !important
+        }
+
+        #return-top-bottom .p-block:first-child {
+            margin-bottom: 5px
+        }
+
+        #return-top-bottom .p-block:hover i {
+            color: #f8f9fa !important
+        }
     </style>
 </head>
 <body>
 <div id="app"></div>
+<!--返回顶部和底部-->
+<div id="return-top-bottom">
+    <div data-to="top" class="p-block"><i class="czs-arrow-up-l puock-text"></i></div>
+    <div data-to="bottom" class="p-block"><i class="czs-arrow-down-l puock-text"></i></div>
+</div>
 <script>
     window.$docsify = {
         name: 'leetcode-python',
@@ -40,6 +76,11 @@
         },
         search: 'auto', // 默认值
     }
+    $(document).on("click", "#return-top-bottom>div", function () {
+        const to = $(this).attr("data-to");
+        const scroll_val = to === 'top' ? 0 : window.document.body.clientHeight;
+        $('html,body').animate({scrollTop: scroll_val}, 800)
+    });
 </script>
 <!-- Docsify v4 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -47,5 +88,6 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 </body>
 </html>
