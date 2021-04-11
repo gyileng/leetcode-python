@@ -18,7 +18,7 @@ $(document).on("click", ".sidebar-nav>ul>li>a", function () {
     }
 })
 
-$('.sidebar-nav>ul>li>ul>li>a').on('click', function () {
+$(document).on("click", ".sidebar-nav>ul>li>ul>li>a", function () {
     if ($(this).next().css('display') == "none") {
         //展开未展开
         $(this).children('ul').slideUp(300);
