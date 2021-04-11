@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'StrawberryIcon-Free';
+    src: url('/fonts/StrawberryIcon-Free.ttf?83lfek');
+    src: url('/fonts/StrawberryIcon-Free.ttf?83lfek#iefix') format('embedded-opentype'), url('/fonts/StrawberryIcon-Free.ttf?83lfek') format('truetype'), url('/fonts/StrawberryIcon-Free.woff?83lfek') format('woff'), url('/fonts/StrawberryIcon-Free.svg?83lfek#StrawberryIcon-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="czs-"], [class*=" czs-"] {
+    font-family: 'StrawberryIcon-Free' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 1px;
+}
+
+.czs-arrow-down-l:before {
+    content: "\e90d";
+}
+
+.czs-arrow-up-l:before {
+    content: "\e90e";
+}
+
+.level-easy {
+    color: #009975;
+}
+
+.level-medium {
+    color: #ed7336;
+}
+
+.level-hard {
+    color: #ec4c47;
+}
+
+#return-top-bottom {
+    position: fixed;
+    right: 10px;
+    bottom: 50px
+}
+
+#return-top-bottom .p-block {
+    transition: all .3s;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-bottom: 0
+}
+
+#return-top-bottom .p-block:hover {
+    background-color: #007bff;
+    color: #f8f9fa
+}
+
+#return-top-bottom .p-block:hover {
+    background-color: #007bff !important;
+    color: #f8f9fa !important
+}
+
+#return-top-bottom .p-block:first-child {
+    margin-bottom: 5px
+}
+
+#return-top-bottom .p-block:hover i {
+    color: #f8f9fa !important
+}
+
+.czs-arrow-up-l:before {
+    content: "\e90e";
+}
+
+.czs-arrow-down-l:before {
+    content: "\e90d";
+}
+
+.p-block, .widget {
+    position: relative;
+    margin: 0 0 15px 0;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 22px -7px rgb(149 148 147 / 30%);
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.nav-show {
+    border-bottom: none;
+}
+
+.nav-item ul {
+    display: none;
+}
+
+.nav-mini.nav-show {
+    border-bottom: none;
+}
+
+.nav-mini ul {
+    display: none;
+}
+
+.nav-mini.nav-show ul {
+    display: block;
+}

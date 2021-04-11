@@ -7,99 +7,7 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <script src="//cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <style>
-        @font-face {
-            font-family: 'StrawberryIcon-Free';
-            src: url('/fonts/StrawberryIcon-Free.ttf?83lfek');
-            src: url('/fonts/StrawberryIcon-Free.ttf?83lfek#iefix') format('embedded-opentype'), url('/fonts/StrawberryIcon-Free.ttf?83lfek') format('truetype'), url('/fonts/StrawberryIcon-Free.woff?83lfek') format('woff'), url('/fonts/StrawberryIcon-Free.svg?83lfek#StrawberryIcon-Free') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        [class^="czs-"], [class*=" czs-"] {
-            font-family: 'StrawberryIcon-Free' !important;
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            position: relative;
-            top: 1px;
-        }
-
-        .czs-arrow-down-l:before {
-            content: "\e90d";
-        }
-
-        .czs-arrow-up-l:before {
-            content: "\e90e";
-        }
-
-        .level-easy {
-            color: #009975;
-        }
-
-        .level-medium {
-            color: #ed7336;
-        }
-
-        .level-hard {
-            color: #ec4c47;
-        }
-
-        #return-top-bottom {
-            position: fixed;
-            right: 10px;
-            bottom: 50px
-        }
-
-        #return-top-bottom .p-block {
-            transition: all .3s;
-            cursor: pointer;
-            padding: 4px 8px;
-            margin-bottom: 0
-        }
-
-        #return-top-bottom .p-block:hover {
-            background-color: #007bff;
-            color: #f8f9fa
-        }
-
-        #return-top-bottom .p-block:hover {
-            background-color: #007bff !important;
-            color: #f8f9fa !important
-        }
-
-        #return-top-bottom .p-block:first-child {
-            margin-bottom: 5px
-        }
-
-        #return-top-bottom .p-block:hover i {
-            color: #f8f9fa !important
-        }
-
-        .czs-arrow-up-l:before {
-            content: "\e90e";
-        }
-
-        .czs-arrow-down-l:before {
-            content: "\e90d";
-        }
-
-        .p-block, .widget {
-            position: relative;
-            margin: 0 0 15px 0;
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 0 22px -7px rgb(149 148 147 / 30%);
-            box-sizing: border-box;
-            background-color: #f8f8f8;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 <div id="app"></div>
@@ -125,15 +33,12 @@
         },
         search: 'auto', // 默认值
     }
-    $(document).on("click", "#return-top-bottom>div", function () {
-        const to = $(this).attr("data-to");
-        const scroll_val = to === 'top' ? 0 : window.document.getElementById("main").clientHeight;
-        $('html,body').animate({scrollTop: scroll_val}, 800)
-    });
 </script>
 <!-- Docsify v4 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="/static/js/main.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
