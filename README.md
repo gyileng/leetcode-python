@@ -1,6 +1,8 @@
 # 序
 
 ------------
+![](https://img.shields.io/badge/Python-3.0-blue)
+![](https://img.shields.io/badge/progress-1%25-red)
 
 - <span style="font-size: 20px">**是什么**</span>  
   这个是一本使用Python编程语言学习探索LeetCode算法题库的电子书籍。
