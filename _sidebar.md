@@ -4,8 +4,8 @@
   - [排序算法](docs/第一章/排序算法.md)
 - 第二章
   - [概述](docs/第二章/概述.md)
-- <span class="nav-item"><a>第三章</a></span>
-  - <span class="nav-mini"><a>001-100</a></span>
+- 第三章
+  - 001-100
     - [26.删除排序数组中的重复项](/problems/26_remove_duplicates/readme.md)
-  - <span class="nav-mini"><a>101-200</a></span>
+  - 101-200
     - [122.买卖股票的最佳时机 II](/problems/122_max_profit/readme.md)
