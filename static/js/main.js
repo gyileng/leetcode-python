@@ -6,7 +6,7 @@ $(document).on("click", "#return-top-bottom>div", function () {
 
 $(function () {
     // nav收缩展开
-    $('.nav-item>a').on('click', function () {
+    $('.sidebar-nav>ul>li>a').on('click', function () {
         if ($(this).next().css('display') == "none") {
             //展开未展开
             $('.nav-item').children('ul').slideUp(300);
@@ -19,7 +19,7 @@ $(function () {
         }
     });
 
-    $('.nav-mini>a').on('click', function () {
+    $('.sidebar-nav>ul>li>ul>li>a').on('click', function () {
         if ($(this).next().css('display') == "none") {
             //展开未展开
             $(this).children('ul').slideUp(300);
