@@ -37,7 +37,7 @@
   function sidebarCollapsePlugin(hook, vm) {
     hook.doneEach(function (html, next) {
       var activeNode = getActiveNode();
-      // openActiveToRoot(activeNode);
+      openActiveToRoot(activeNode);
       addFolderFileClass();
       addLevelClass();
       syncScrollTop(activeNode);
@@ -126,7 +126,7 @@
 
       while (node && node.className !== 'sidebar-nav' && node.parentNode) {
         if (node.parentNode.tagName === 'LI' || node.parentNode.className === 'app-sub-sidebar') {
-          node.parentNode.classList.add('open');
+          node.parentNode.classList.add('collapse');
         }
 
         node = node.parentNode;
