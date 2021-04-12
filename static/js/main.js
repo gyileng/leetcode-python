@@ -21,12 +21,12 @@ $(document).on("click", "#return-top-bottom>div", function () {
 $(document).on("click", ".sidebar-nav>ul>li>ul>li>a", function () {
     if ($(this).next().css('display') == "none") {
         //展开未展开
-        $(this).children('ul').slideUp(300);
-        $(this).next('ul').slideDown(300);
+        $(this).children('ul').slideUp(0);
+        $(this).next('ul').slideDown(0);
         $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
     } else {
         //收缩已展开
-        $(this).next('ul').slideUp(300);
+        $(this).next('ul').slideUp(0);
         $('.nav-mini.nav-show').removeClass('nav-show');
     }
 });
