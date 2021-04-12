@@ -36,8 +36,9 @@
             function (hook, vm) {
                 hook.doneEach(function (html, next) {
                     var node = document.querySelector('.sidebar-nav .active');
-                    // node.parentNode.parentNode.parentNode.style.display = "block";
-                    node.parentNode.style.display = "block"
+                    if (node) {
+                       node.parentNode.style.display = "block"
+                    }
                 });
             },
         ]
