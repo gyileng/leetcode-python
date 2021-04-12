@@ -11,3 +11,8 @@
     - [26.删除排序数组中的重复项](/problems/26_remove_duplicates/readme.md)
   - [101-200](#)
     - [122.买卖股票的最佳时机 II](/problems/122_max_profit/readme.md)
+    - [136.只出现一次的数字](/problems/136_single_number/single_number.md)
+    - [179.最大数 ](/problems/179_largest_number/largest_number.md)
+    - [189.旋转数组](/problems/189_rotate/rotate.md)
+  - [201-300](#)    
+    - [217.存在重复元素](/problems/217_contains_duplicate/contains_duplicate.md)

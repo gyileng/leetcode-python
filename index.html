@@ -21,7 +21,7 @@
         name: 'leetcode-python',
         repo: 'https://github.com/gyileng/leetcode-python/',
         loadSidebar: true,
-        subMaxLevel: 5,
+        subMaxLevel: 3,
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md'
         },
@@ -37,7 +37,10 @@
                 hook.doneEach(function (html, next) {
                     var node = document.querySelector('.sidebar-nav .active');
                     if (node) {
-                       node.parentNode.style.display = "block"
+                        node.parentNode.style.display = "block";
+                        node.childNodes.forEach(function (value) {
+                            value.style.display = "block";
+                        })
                     }
                 });
             },
