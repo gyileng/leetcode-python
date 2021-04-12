@@ -21,7 +21,7 @@
         name: 'leetcode-python',
         repo: 'https://github.com/gyileng/leetcode-python/',
         loadSidebar: true,
-        // subMaxLevel: 2,
+        subMaxLevel: 5,
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md'
         },
@@ -32,7 +32,24 @@
             language: 'chinese'
         },
         search: 'auto', // 默认值
-        sidebarDisplayLevel: 6,
+        plugins: [
+            function (hook, vm) {
+                hook.doneEach(function (html, next) {
+                    var node = document.querySelector('.sidebar-nav .active');
+
+                    if (!node) {
+                        var curLink = document.querySelector(".sidebar-nav a[href=\"".concat(decodeURIComponent(location.hash).replace(/ /gi, '%20'), "\"]"));
+                        node = findTagParent(curLink, 'LI', 2);
+
+                        if (node) {
+                            node.classList.add('active');
+                        }
+                    }
+                    // node.parentNode.parentNode.parentNode.style.display = "block";
+                    node.parentNode.style.display = "block"
+                });
+            },
+        ]
     }
 </script>
 <!-- Docsify v4 -->
@@ -43,6 +60,5 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-<script src="/static/js/docsify-sidebar-collapse.js"></script>
 </body>
 </html>
