@@ -39,7 +39,9 @@
                     if (node) {
                         node.parentNode.style.display = "block";
                         node.childNodes.forEach(function (value) {
-                            value.style.display = "block";
+                            if (value.style) {
+                                value.style.display = "block";
+                            }
                         })
                     }
                 });
