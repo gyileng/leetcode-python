@@ -9,6 +9,7 @@
 - [第三章](docs/第三章/概述.md)
   - [001-100](/docs/第三章/1-100.md)
     - [26.删除排序数组中的重复项](/problems/26_remove_duplicates/readme.md)
+    - [36.有效的数独](/problems/36_valid_sudoku/valid_sudoku.md)
   - [101-200](/docs/第三章/101-200.md)
     - [122.买卖股票的最佳时机 II](/problems/122_max_profit/readme.md)
     - [136.只出现一次的数字](/problems/136_single_number/single_number.md)
@@ -16,3 +17,4 @@
     - [189.旋转数组](/problems/189_rotate/rotate.md)
   - [201-300](/docs/第三章/201-300.md)    
     - [217.存在重复元素](/problems/217_contains_duplicate/contains_duplicate.md)
+- [更新日志](_update_info.md)

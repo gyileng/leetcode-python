@@ -14,3 +14,4 @@
 | 189 | 旋转数组 | [Go](/problems/189_rotate/rotate.md) | <span class="level-hard">中等</span> | O(n) | O(1) |   | 45.9% | [:arrow_down:](/problems/189_rotate/rotate.py) |
 | 217 | 存在重复元素 | [Go](/problems/217_contains_duplicate/contains_duplicate.md) | <span class="level-easy">简单</span> | O(1) | O(1) |   | 55.5% | [:arrow_down:](/problems/217_contains_duplicate/contains_duplicate.py) |
 | 136 | 只出现一次的数字 | [Go](/problems/136_single_number/single_number.md) | <span class="level-easy">简单</span> | O(n) | O(1) |   | 71.2% | [:arrow_down:](/problems/136_single_number/single_number.py) |
+| 36 | 有效的数独 | [Go](/problems/36_valid_sudoku/valid_sudoku.md) | <span class="level-hard">中等</span> | O(1) | O(1) | :heart: | 62.3% | [:arrow_down:](/problems/36_valid_sudoku/valid_sudoku.py) |
