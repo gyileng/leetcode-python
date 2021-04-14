@@ -13,6 +13,7 @@
 - 只需要根据以上规则，验证已经填入的数字是否有效即可。
 
 **示例 1：**
+
 ![sudoku](https://blog-1257205512.cos.ap-shanghai.myqcloud.com/wp-content/uploads/2021/04/250px-sudoku-by-l2g-20050714svg.png "sudoku")
 ```code
 输入：board = 
