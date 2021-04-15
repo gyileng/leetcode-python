@@ -7,11 +7,12 @@
 
 **小试牛刀**
 
-| No. | Title | Solution | Difficulty | TimeComplexity | SpaceComplexity | Favorite | Acceptance | Download |
-| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
-| 26 | 删除排序数组中的重复项 | [Go](/problems/26_remove_duplicates/readme.md) | <span class="level-easy">简单</span> | O(n) | O(1) | :heart: | 53.2% | [:arrow_down:](/problems/26_remove_duplicates/leetcode.py) |
-| 122 | 买卖股票的最佳时机 II | [Go](/problems/122_max_profit/readme.md) | <span class="level-easy">简单</span> | O(n) | O(1) |   | 67.2% | [:arrow_down:](/problems/122_max_profit/leetcode.py) |
-| 189 | 旋转数组 | [Go](/problems/189_rotate/rotate.md) | <span class="level-hard">中等</span> | O(n) | O(1) |   | 45.9% | [:arrow_down:](/problems/189_rotate/rotate.py) |
-| 217 | 存在重复元素 | [Go](/problems/217_contains_duplicate/contains_duplicate.md) | <span class="level-easy">简单</span> | O(1) | O(1) |   | 55.5% | [:arrow_down:](/problems/217_contains_duplicate/contains_duplicate.py) |
-| 136 | 只出现一次的数字 | [Go](/problems/136_single_number/single_number.md) | <span class="level-easy">简单</span> | O(n) | O(1) |   | 71.2% | [:arrow_down:](/problems/136_single_number/single_number.py) |
-| 36 | 有效的数独 | [Go](/problems/36_valid_sudoku/valid_sudoku.md) | <span class="level-hard">中等</span> | O(1) | O(1) | :heart: | 62.3% | [:arrow_down:](/problems/36_valid_sudoku/valid_sudoku.py) |
+| No. | Title | Solution | Difficulty | TimeComplexity | SpaceComplexity | Favorite | Acceptance |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| 26 | 删除排序数组中的重复项 | [Go](/problems/26_remove_duplicates/readme.md) | <span class="level-easy">简单</span> | O(N) | O(1) | :heart: | 53.2% |
+| 122 | 买卖股票的最佳时机 II | [Go](/problems/122_max_profit/readme.md) | <span class="level-easy">简单</span> | O(N) | O(1) |   | 67.2% |
+| 189 | 旋转数组 | [Go](/problems/189_rotate/rotate.md) | <span class="level-hard">中等</span> | O(N) | O(1) |   | 45.9% |
+| 217 | 存在重复元素 | [Go](/problems/217_contains_duplicate/contains_duplicate.md) | <span class="level-easy">简单</span> | O(1) | O(1) |   | 55.5% |
+| 136 | 只出现一次的数字 | [Go](/problems/136_single_number/single_number.md) | <span class="level-easy">简单</span> | O(N) | O(1) |   | 71.2% |
+| 36 | 有效的数独 | [Go](/problems/36_valid_sudoku/valid_sudoku.md) | <span class="level-hard">中等</span> | O(1) | O(1) | :heart: | 62.3% |
+| 48 | 旋转图像 | [Go](/problems/48_rotate_image/rotate_image.md) | <span class="level-hard">中等</span> | O(N²) | O(N²) | :heart: | 72.6% |
