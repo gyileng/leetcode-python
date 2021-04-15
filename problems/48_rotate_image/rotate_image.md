@@ -63,11 +63,11 @@ class Solution:
 
 **思路二：**
 ```math
-\begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix}\Rightarrow\begin{bmatrix}\overbrace7^1&2&\overbrace1^2\\4&5&6\\\overbrace9^4&8&\overbrace3^3\end{bmatrix}\Rightarrow\begin{bmatrix}7&\overbrace4^1&1\\\overbrace8^4&5&\overbrace2^2\\9&\overbrace6^3&3\end{bmatrix}
+\begin{bmatrix}\overbrace1^{1\rightarrow}&2&\overbrace3^{2\rightarrow}\\4&5&6\\\overbrace7^{\leftarrow4}&8&\overbrace9^{\leftarrow3}\end{bmatrix}\Rightarrow\begin{bmatrix}7&\overbrace2^{1\rightarrow}&1\\\overbrace4^{4\rightarrow}&5&\overbrace6^{\leftarrow2}\\9&\overbrace8^{\leftarrow3}&3\end{bmatrix}\Rightarrow\begin{bmatrix}7&4&1\\8&5&2\\9&6&3\end{bmatrix}
 ```
 -----------------------
 ```math
-\begin{bmatrix}5&1&9&11\\2&4&8&10\\13&3&6&7\\15&14&12&16\end{bmatrix}\Rightarrow\begin{bmatrix}\overbrace{15}^{1\rightarrow}&1&9&\overbrace5^{2\rightarrow}\\2&4&8&10\\13&3&6&7\\\overbrace{16}^{\leftarrow4}&14&12&\overbrace{11}^{\leftarrow3}\end{bmatrix}\Rightarrow\begin{bmatrix}15&\overset{\overbrace{}1}{13}^\rightarrow&9&5\\2&3&4&\overbrace1^{\leftarrow2}\\\overbrace{12}^{4\rightarrow}&6&8&7\\16&14&\overbrace{10}^{\leftarrow3}&11\end{bmatrix}\Rightarrow\begin{bmatrix}15&13&\overset{\overbrace{}1}2^\rightarrow&5\\\overbrace{14}^{4\rightarrow}&3&4&1\\12&6&8&\overbrace9^{\leftarrow2}\\16&\overbrace7^{\leftarrow3}&10&11\end{bmatrix}\Rightarrow\begin{bmatrix}15&13&2&5\\14&\overbrace3^{1\rightarrow}&\overbrace4^{2\rightarrow}&1\\12&\overbrace6^{\leftarrow4}&\overbrace8^{\leftarrow3}&9\\16&7&10&11\end{bmatrix}
+\begin{bmatrix}\overbrace5^{1\rightarrow}&1&9&\overbrace{11}^{2\rightarrow}\\2&4&8&10\\13&3&6&7\\\overbrace{15}^{\leftarrow4}&14&12&\overbrace{16}^{\leftarrow3}\end{bmatrix}\Rightarrow\begin{bmatrix}15&\overset{\overbrace{}1}1^\rightarrow&9&5\\2&4&8&\overbrace{10}^{\leftarrow2}\\\overbrace{13}^{4\rightarrow}&3&6&7\\16&14&\overbrace{12}^{\leftarrow3}&11\end{bmatrix}\Rightarrow\begin{bmatrix}15&13&\overset{\overbrace{}1}9^\rightarrow&5\\\overbrace2^{4\rightarrow}&4&8&1\\12&3&6&\overbrace7^{\leftarrow2}\\16&\overbrace{14}^{\leftarrow3}&10&11\end{bmatrix}\Rightarrow\begin{bmatrix}15&13&2&5\\14&\overbrace4^{1\rightarrow}&\overbrace8^{2\rightarrow}&1\\12&\overbrace3^{\leftarrow4}&\overbrace6^{\leftarrow3}&9\\16&7&10&11\end{bmatrix}\Rightarrow\begin{bmatrix}15&13&2&5\\14&3&4&1\\12&6&8&9\\16&7&10&11\end{bmatrix}
 ```
 使用`原地旋转`，一次性将数字转移到需要的位置即，`a,b,c,d=d,a,b,c`，之后需要控制循环的深度，如果采用全循环，那么相当于
 转了一圈又回了原位。  
