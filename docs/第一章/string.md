@@ -6,5 +6,6 @@
 
 **小试牛刀**
 
-| No. | Title | Solution | Difficulty | TimeComplexity | SpaceComplexity | Favorite | Acceptance | Download |
-| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| No. | Title | Solution | Difficulty | TimeComplexity | SpaceComplexity | Favorite | Acceptance |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| 344 | 反转字符串 | [Go](/problems/344_reverse_string/reverse_string.md) | <span class="level-easy">简单</span> | O(N) | O(1) |  | 75.0% |
